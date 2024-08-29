@@ -5,7 +5,7 @@ import { updateSize, updateStart } from '../utils/sizeSlice';
 
 const Body = () => {
     const [data,setData]=useState([]);
-    const [size,setSize]=useState(5);
+    //const [size,setSize]=useState(5);
     const dispatch = useDispatch();
     const start = useSelector(store=>store.size);
     console.log(start.start);
@@ -24,7 +24,7 @@ const Body = () => {
 
     const handleChange=(e)=>{
         //console.log(e.target.value);
-        setSize(e.target.value);
+        //setSize(e.target.value);
         //console.log(size);
         dispatch(updateSize(e.target.value));
         dispatch(updateStart(0));
