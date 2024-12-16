@@ -3,8 +3,15 @@ import './App.css';
 import Body from './components/Body';
 import Navbar from './components/Navbar';
 import store from './utils/store';
+import { clarity } from 'react-microsoft-clarity';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    // Initialize Clarity with your project ID
+    clarity.init('peqksstinr');
+  }, []);
+
   return (
     <Provider store={store}>
     <div className="App">
