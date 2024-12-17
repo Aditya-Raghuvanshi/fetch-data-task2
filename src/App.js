@@ -29,9 +29,9 @@ function App() {
       };
       
     identifyUser(user?.id, user?.name, user?.email);
-    clarity.setTag('set','id',user?.id)
-    clarity.setTag('set','name',user?.name)
-    clarity.setTag('set','email',user?.email)
+    clarity.setTag('id',user?.id)
+    clarity.setTag('name',user?.name)
+    clarity.setTag('email',user?.email)
   }, []);
 
   return (
